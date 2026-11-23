@@ -1,0 +1,81 @@
+{
+  "_doc": "Preston Blair / Rhubarb-compatible mouth chart. Units: x in [-1, 1] = half mouth width, y grows downward, (0,0) = mouth centre. 'inner' is the opening (closed spline), 'teeth' and 'tongue' are alpha-locked to the opening, 'line' is the lip contour stroke (open), 'lower_lip' is a short accent stroke.",
+  "shapes": {
+    "X": {
+      "description": "Rest / idle. Relaxed closed mouth.",
+      "phonemes": ["sil", "pause"],
+      "line": [[-0.55, 0.02], [-0.2, 0.07], [0.2, 0.07], [0.55, 0.0]],
+      "lower_lip": null, "inner": null, "teeth": null, "tongue": null
+    },
+    "A": {
+      "description": "Closed, lips pressed: M, B, P.",
+      "phonemes": ["M", "B", "P"],
+      "line": [[-0.6, 0.0], [-0.25, 0.04], [0.25, 0.04], [0.6, 0.0]],
+      "lower_lip": [[-0.22, 0.22], [0.0, 0.26], [0.22, 0.22]],
+      "inner": null, "teeth": null, "tongue": null
+    },
+    "B": {
+      "description": "Slightly open, clenched teeth: most consonants (K, S, T, EE, D, N, Z...).",
+      "phonemes": ["K", "S", "T", "D", "N", "Z", "G", "NG", "IY", "IH", "Y", "CH", "JH", "SH", "ZH", "TH", "DH", "HH"],
+      "line": null,
+      "lower_lip": null,
+      "inner": [[-0.62, 0.0], [-0.35, -0.13], [0.0, -0.16], [0.35, -0.13], [0.62, 0.0], [0.35, 0.16], [0.0, 0.2], [-0.35, 0.16]],
+      "teeth": [[-0.7, -0.3], [0.7, -0.3], [0.7, 0.02], [0.0, 0.05], [-0.7, 0.02]],
+      "tongue": null
+    },
+    "C": {
+      "description": "Open: EH, AE, AH (as in 'men', 'bat').",
+      "phonemes": ["EH", "AE", "AH", "EY"],
+      "line": null,
+      "lower_lip": [[-0.25, 0.5], [0.0, 0.55], [0.25, 0.5]],
+      "inner": [[-0.7, -0.02], [-0.4, -0.25], [0.0, -0.3], [0.4, -0.25], [0.7, -0.02], [0.4, 0.3], [0.0, 0.38], [-0.4, 0.3]],
+      "teeth": [[-0.8, -0.45], [0.8, -0.45], [0.8, -0.18], [0.0, -0.14], [-0.8, -0.18]],
+      "tongue": [[-0.45, 0.45], [-0.25, 0.18], [0.0, 0.12], [0.25, 0.18], [0.45, 0.45]]
+    },
+    "D": {
+      "description": "Wide open: AA, AY, AW (as in 'father', 'my').",
+      "phonemes": ["AA", "AY", "AW"],
+      "line": null,
+      "lower_lip": [[-0.3, 0.88], [0.0, 0.94], [0.3, 0.88]],
+      "inner": [[-0.75, -0.05], [-0.45, -0.38], [0.0, -0.45], [0.45, -0.38], [0.75, -0.05], [0.5, 0.48], [0.0, 0.72], [-0.5, 0.48]],
+      "teeth": [[-0.85, -0.6], [0.85, -0.6], [0.85, -0.3], [0.0, -0.26], [-0.85, -0.3]],
+      "tongue": [[-0.55, 0.8], [-0.35, 0.32], [0.0, 0.24], [0.35, 0.32], [0.55, 0.8]]
+    },
+    "E": {
+      "description": "Slightly rounded: AO, ER, OH (as in 'off', 'bird').",
+      "phonemes": ["AO", "ER", "OY"],
+      "line": null,
+      "lower_lip": [[-0.2, 0.62], [0.0, 0.66], [0.2, 0.62]],
+      "inner": [[-0.45, 0.0], [-0.32, -0.3], [0.0, -0.38], [0.32, -0.3], [0.45, 0.0], [0.32, 0.35], [0.0, 0.45], [-0.32, 0.35]],
+      "teeth": [[-0.6, -0.5], [0.6, -0.5], [0.6, -0.24], [0.0, -0.2], [-0.6, -0.24]],
+      "tongue": [[-0.3, 0.45], [-0.15, 0.22], [0.0, 0.18], [0.15, 0.22], [0.3, 0.45]]
+    },
+    "F": {
+      "description": "Puckered: UW, OW, W, OO (as in 'you', 'show').",
+      "phonemes": ["UW", "OW", "W", "UH"],
+      "line": null,
+      "lower_lip": [[-0.14, 0.4], [0.0, 0.44], [0.14, 0.4]],
+      "inner": [[-0.24, 0.0], [-0.17, -0.2], [0.0, -0.25], [0.17, -0.2], [0.24, 0.0], [0.17, 0.22], [0.0, 0.27], [-0.17, 0.22]],
+      "teeth": null,
+      "tongue": null
+    },
+    "G": {
+      "description": "Upper teeth on lower lip: F, V.",
+      "phonemes": ["F", "V"],
+      "line": null,
+      "lower_lip": [[-0.45, 0.25], [0.0, 0.32], [0.45, 0.25]],
+      "inner": [[-0.6, 0.02], [-0.32, -0.16], [0.0, -0.2], [0.32, -0.16], [0.6, 0.02], [0.3, 0.12], [0.0, 0.15], [-0.3, 0.12]],
+      "teeth": [[-0.7, -0.35], [0.7, -0.35], [0.7, 0.2], [0.0, 0.22], [-0.7, 0.2]],
+      "tongue": null
+    },
+    "H": {
+      "description": "Tongue raised behind teeth: L (as in 'let').",
+      "phonemes": ["L", "R"],
+      "line": null,
+      "lower_lip": [[-0.25, 0.52], [0.0, 0.57], [0.25, 0.52]],
+      "inner": [[-0.65, -0.02], [-0.38, -0.26], [0.0, -0.32], [0.38, -0.26], [0.65, -0.02], [0.38, 0.3], [0.0, 0.4], [-0.38, 0.3]],
+      "teeth": [[-0.8, -0.45], [0.8, -0.45], [0.8, -0.2], [0.0, -0.16], [-0.8, -0.2]],
+      "tongue": [[-0.3, 0.45], [-0.22, -0.05], [0.0, -0.15], [0.22, -0.05], [0.3, 0.45]]
+    }
+  }
+}
